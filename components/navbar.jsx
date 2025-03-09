@@ -48,12 +48,6 @@ export function Navbar() {
             </nav>
           </div>
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex gap-2">
-              <Button variant="outline" size="sm">
-                Log in
-              </Button>
-              <Button size="sm">Sign up</Button>
-            </div>
             <Button
               variant="ghost"
               size="icon"
