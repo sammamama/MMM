@@ -6,7 +6,7 @@ import fgbg from "@/public/realfg1.png";
 import bgbg from "@/public/realbg1.png";
 import logo from "@/public/logonobg.png";
 
-import { useScroll, useTransform, motion, spring, easeInOut, easeIn } from "framer-motion";
+import { useScroll, useTransform, motion, spring, easeIn } from "framer-motion";
 
 const HeroParallax = () => {
   const ref = useRef(null);
@@ -29,7 +29,7 @@ const HeroParallax = () => {
   return (
     <div className="relative h-screen w-full" ref={ref}>
         <motion.div
-        className="absolute inset-0 z-10 "
+        className="absolute inset-0 z-10 w-full h-full"
         transition={{
           type: easeIn,
           ...variants
@@ -40,7 +40,7 @@ const HeroParallax = () => {
       </motion.div>
     
       <motion.div
-        className="absolute inset-0 object-cover"
+        className="absolute inset-0 object-cover bg-black opacity-70"
         transition={{
           type: spring,
           ...variants

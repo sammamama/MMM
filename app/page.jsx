@@ -1,5 +1,8 @@
-import HeroParallax from "@/components/HeroParallax/HeroParallax";
 import { Navbar } from "@/components/navbar";
+import HeroParallax from "@/components/HeroParallax/HeroParallax";
+import Story from "@/components/Story/Story";
+import Crew from "@/components/Crew/Crew";
+
 
 export default function Home() {
   return (
@@ -12,8 +15,10 @@ export default function Home() {
         <HeroParallax />
       </div>
 
-      <div className="h-[200vh]"></div>
-      {/* </div> */}
+      <div className="mx-[15%] my-[100px] text-white">
+        <Story />
+        <Crew />
+      </div>
     </div>
   );
 }

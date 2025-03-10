@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -6,6 +7,8 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"], // Use correct weights
   variable: "--font-poppins",
 });
+
+const manrope = Manrope({subsets: ["latin"]})
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased`}
+        className={`${manrope.className} ${poppins.variable} antialiased`}
       >
         {children}
       </body>

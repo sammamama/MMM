@@ -29,8 +29,8 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      <div className="backdrop-blur-md bg-background/80 border-b">
+    <header className="sticky top-0 z-50 w-full text-white">
+      <div className="backdrop-blur-md bg-neutral-950 border-b">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
             <Link href="/" className="font-bold text-xl">
@@ -41,7 +41,7 @@ export function Navbar() {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="text-sm font-medium transition-colors hover:text-primary">
+                  className="text-sm font-extralight transition-colors hover:text-primary">
                   {item.title}
                 </Link>
               ))}
@@ -61,23 +61,17 @@ export function Navbar() {
       </div>
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden backdrop-blur-md bg-background/95 border-b">
+        <div className="md:hidden backdrop-blur-md bg-neutral-950 border-b">
           <nav className="container py-4 flex flex-col gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="text-sm font-medium py-2 transition-colors hover:text-primary"
+                className="text-sm py-2 font-extralight transition-colors hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}>
                 {item.title}
               </Link>
             ))}
-            <div className="flex flex-col gap-2 pt-2">
-              <Button variant="outline" className="w-full justify-start">
-                Log in
-              </Button>
-              <Button className="w-full justify-start">Sign up</Button>
-            </div>
           </nav>
         </div>
       )}
