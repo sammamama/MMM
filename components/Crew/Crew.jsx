@@ -14,11 +14,11 @@ const Crew = () => {
 
   const inView = useInView(ref, {
     triggerOnce: true,
-    margin: "0px 0px 20px 0px",
+    margin: "0px 0px 0px 0px",
   });
   const inViewImg = useInView(ref, {
     triggerOnce: true,
-    margin: "0px 0px 20px 0px",
+    margin: "0px 0px 0px 0px",
   });
 
   const [modalOpen, setModalOpen] = useState(false);

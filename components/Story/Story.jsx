@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 const Story = () => {
     const ref = useRef(null)
-    const isInView = useInView(ref, { triggerOnce: true, margin: "0px 0px 20px 0px" });
+    const isInView = useInView(ref, { triggerOnce: true, margin: "0px 0px 0px 0px" });
 
     return (
     <div ref={ref} className="my-16">
@@ -24,7 +24,7 @@ const Story = () => {
             </motion.div>
 
             <motion.div
-              className="leading-5.5 tracking-widest font-extralight text-neutral-300"
+              className="leading-5.5 text-sm md:text-base tracking-widest font-extralight text-neutral-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
