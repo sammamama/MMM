@@ -6,8 +6,8 @@ import Crew from "@/components/Crew/Crew";
 
 export default function Home() {
   return (
-    <div className="h-[400vh] ">
-      <div className="h-screen w-full relative overflow-hidden">
+    <div className="mmin-h-screen">
+      <div className="w-full relative">
         <div className="w-screen fixed top-0 left-0 z-50">
           <Navbar className={"w-full "} />
         </div>
@@ -15,7 +15,7 @@ export default function Home() {
         <HeroParallax />
       </div>
 
-      <div className="mx-[15%] my-[100px] text-white">
+      <div className="mx-[15%] my-[100px]">
         <Story />
         <Crew />
       </div>
