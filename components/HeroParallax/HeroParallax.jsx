@@ -56,7 +56,7 @@ const HeroParallax = () => {
           type: spring,
           ...variants
         }}
-        className="w-full h-screen flex absolute inset-0 justify-center items-center"
+        className="w-full h-screen flex flex-col absolute inset-0 justify-center items-center"
       >
         <Image src={logo} alt="asd" className="object-cover w-[100%] lg:w-[45%]" />
       </motion.div>
